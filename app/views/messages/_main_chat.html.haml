@@ -1,0 +1,40 @@
+.main__chat
+  .main__chat__group   
+    .main__chat__group__form
+      %h2.main__chat__group__name
+        グループ名
+      %ul.main__chat__group__menber
+        %h2 Menber:
+        %li.main__chat__group__menber__list
+          名前  
+    .main__chat__edit-btn
+      = link_to "#" do
+        Edit
+  .main__chat__message__board
+    .message
+      .message__top-info
+        %p.message__top-info__sender
+          発言者
+        %p.message__top-info__time
+          10:30
+      %p.message__top-info__text
+        ここに文章がきます
+    .message
+      .message__top-info
+        %p.message__top-info__sender
+          発言者
+        %p.message__top-info__time
+          10:00
+      %p.message__top-info__text
+        おはよう
+  .main__chat__text__box
+    .text
+      .text__area
+        メッセージ
+      .text__icon
+        %label{class: "input__icon"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input__image"}
+    .text__send-btn
+      = link_to "#" do
+        Send

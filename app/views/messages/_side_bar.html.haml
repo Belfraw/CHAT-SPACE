@@ -1,0 +1,19 @@
+
+.side-board
+  .side-bar
+    .side-bar__box
+      %p.side-bar__box__username 
+        name         
+      %ul.side-bar__box__icons
+        %li.side-bar__box__icon-left
+          = link_to "#" do
+            =icon('fas', 'edit', )         
+        %li.side-bar__box__icon-right
+          = link_to "#" do
+            =icon('fas', 'cog', )          
+  .groups   
+    = link_to "#", class:"group" do
+      %p.group__group-name          
+        グループ名
+      %p.group__group-message
+        メッセージ
