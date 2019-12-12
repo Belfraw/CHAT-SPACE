@@ -152,6 +152,7 @@ displa* {
       margin-right: 15px;
       position: relative;
       display: flex;
+      border-radius: 3px;
       &__area{
         line-height: 50px;
       }
@@ -172,13 +173,13 @@ displa* {
       }  
     }
     .text__send-btn{
-      background-color: skyblue;      
-      padding: 16px 20px;
-      border-radius: 4px;      
+      background-color: skyblue;           
+      border-radius: 3px;      
       a{
         text-decoration: none;
         color: white;
-        display: block;     
+        display: block;  
+        padding: 16px 20px;         
       }
     }
   }
