@@ -70,6 +70,7 @@ displa* {
   width:  calc(100vw - 300px);
   background-color: #ffffff;
   float: left;
+  box-sizing: border-box;
   &__group{
     height: 100px;
     display: flex;
@@ -115,6 +116,7 @@ displa* {
     background-color: #fafafa;
     padding: 40px 46px;
     box-sizing: border-box;
+    overflow: scroll;
     .message{
       padding-bottom: 40px;
       &__top-info{
@@ -144,22 +146,25 @@ displa* {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    .text{
-      background: white;
-      padding: 0 40px 0 10px;
+    position: fixed;
+    .text{     
       height: 50px;
       width: 100%;
-      margin-right: 15px;
+      margin-right: 5px;
       position: relative;
       display: flex;
       border-radius: 3px;
       &__area{
         line-height: 50px;
+        background: white;
+        padding: 0 40px 0 10px;
+        width: 930px;
+        border-radius: 3px;
       }
       &__icon{
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 80px;
         .input__icon{
           display: block;
           font-size: 1.5rem;
@@ -175,12 +180,11 @@ displa* {
     .text__send-btn{
       background-color: skyblue;           
       border-radius: 3px;      
-      a{
-        text-decoration: none;
-        color: white;
-        display: block;  
-        padding: 16px 20px;         
-      }
+      text-decoration: none;
+      color: white;
+      display: inline;  
+      padding: 16px 10px;
+      margin-left: 5px;
     }
   }
 }
