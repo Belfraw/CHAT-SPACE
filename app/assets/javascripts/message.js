@@ -52,7 +52,6 @@ function scroll() {
       contentType: false
     })
     .done(function(data){
-      console.log(data.image);
       var html = buildHTML(data);     
       $('.main__chat__message__board').append(html);
       $('#new_message')[0].reset()
