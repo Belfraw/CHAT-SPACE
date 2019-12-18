@@ -147,24 +147,25 @@ displa* {
     align-items: center;
     box-sizing: border-box;
     position: fixed;
+    width:  calc(100vw - 300px);
     .text{     
-      height: 50px;
-      width: 100%;
+      height: 50px;     
       margin-right: 5px;
       position: relative;
       display: flex;
       border-radius: 3px;
+      
       &__area{
         line-height: 50px;
         background: white;
         padding: 0 40px 0 10px;
-        width: 930px;
         border-radius: 3px;
+        width: 910px;
       }
       &__icon{
         position: absolute;
         top: 10px;
-        right: 80px;
+        right: 90px;
         .input__icon{
           display: block;
           font-size: 1.5rem;
@@ -183,7 +184,7 @@ displa* {
       text-decoration: none;
       color: white;
       display: inline;  
-      padding: 16px 10px;
+      padding: 16px 20px;
       margin-left: 5px;
     }
   }
