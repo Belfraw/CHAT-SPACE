@@ -4,9 +4,10 @@
       %h2.main__chat__group__name
         = @group.name
       %ul.main__chat__group__menber
-        %h2 Menber:
+        %p Menber:
         %li.main__chat__group__menber__list
-          = current_user.name 
+        - @group.users.each do |g|
+          = g.name
     .main__chat__edit-btn
       = link_to edit_group_path(@group) do
         Edit
